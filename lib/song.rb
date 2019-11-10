@@ -42,8 +42,10 @@ class Song
     self.all.sort_by{|a| a.name}
   end 
   
-  def self.new_from_filename(file_name)
-    song = song.new 
-    song.name = file
+  def self.new_from_filename(filename)
+    song = self.new
+    song.name = song_name
+    song.artist_name = artist_name
+    song
   end 
 end
